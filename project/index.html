@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InnovateHub</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Container Box -->
+    <div class="container">
+      <!-- Left box  -->
+      <div class="left">
+        <!-- title and Introduction -->
+        <div class="head1">
+          <div class="l1">
+            <img src="/photo/logo.jpg" alt="" />
+            <div class="title">
+              <p>INC</p>
+              <h2>InnovateHub</h2>
+            </div>
+          </div>
+
+          <div class="pic">
+            <img id="pic" src="/photo/DSC07477.JPG" alt="" />
+          </div>
+        </div>
+
+        <div class="team">
+          <ul>
+            <li><img src="svg/design.svg" alt="" />Design Team</li>
+            <li><img src="svg/management.svg" alt="" /> Management Team</li>
+            <li><img src="svg/developer.svg" alt="" /> Development Team</li>
+          </ul>
+          <div class="add"><img src="svg/add.svg" alt="" /> Create a Team</div>
+        </div>
+        <div id="foldercontainer">
+          <div class="head2">
+            <h3>FOLDERS</h3>
+            <button id="btn" onclick="addFolder()" onclick="deleteChecked()">+</button>
+          </div>
+
+          <div class="folder1">
+            <div class="Sales"><img src="svg/folder.svg" alt="" />Sales</div>
+            <div class="Design"><img src="svg/folder.svg" alt="" />Design</div>
+            <div class="Office"><img src="svg/folder.svg" alt="" />Office</div>
+            <div class="legal"><img src="svg/folder.svg" alt="" />Legal</div>
+          </div>
+        </div>
+
+        <div class="help">
+          <div class="invite">
+            <img src="svg/team.svg" alt="" />
+            <p>Invite teammates</p>
+          </div>
+          <div class="help1">
+            <img src="svg/help.svg" alt="" />
+            <p>Help and First Steps</p>
+          </div>
+
+          <div class="trial-container">
+            <p><span id="remaining-days"></span> days left your trial.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- right box -->
+      <div class="right">
+        <div class="head3">
+          <h3>Products</h3>
+          <div class="search">
+            <input
+              type="search"
+              name="search"
+              id=""
+              placeholder="Search here.."
+            />
+            <img src="svg/message.svg" alt="" />
+            <img src="svg/setting.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="container2">
+          <div class="sector">
+            <div class="work">
+              <div class="allbrands">All Brands</div>
+              <div class="desk">Desk</div>
+              <div class="tags">Tags</div>
+              <div class="sort">Sort</div>
+              <div class="filter">Filter</div>
+            </div>
+
+            <div class="send">
+              <div class="meeting">Meetings</div>
+              <div class="transfer">Transfer</div>
+            </div>
+          </div>
+          <div class="varities">
+            <div class="brand">
+              <h3>Brands</h3>
+              <div id="list">
+                <span>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="checkbox1"
+                    onclick="updateCount()"
+                   
+                  />Wix</span
+                >
+                <span
+                  ><input
+                    type="checkbox"
+                    name=""
+                    id="checkbox2"
+                    onclick="updateCount()"
+                    
+                  />shopify</span
+                >
+                <span>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="checkbox3"
+                    onclick="updateCount()"
+                  />Mailchimp</span
+                >
+                <span
+                  ><input
+                    type="checkbox"
+                    name=""
+                    id="checkbox4"
+                    onclick="updateCount()"
+                  />Paypal</span
+                >
+                <span>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="checkbox5"
+                    onclick="updateCount()"
+                  />Disney</span
+                >
+                <span>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="checkbox6"
+                    onclick="updateCount()"
+                  />intercom</span
+                >
+                <span>
+                  <input
+                    type="checkbox"
+                    name=""
+                    id="checkbox7"
+                    onclick="updateCount()"
+                  />Google</span
+                >
+                <span
+                  ><input
+                    type="checkbox"
+                    name=""
+                    id="checkbox8"
+                    onclick="updateCount()"
+                  />Evernote</span
+                >
+                <span
+                  ><input
+                    type="checkbox"
+                    name=""
+                    id="checkbox9"
+                    onclick="updateCount()"
+                  />Microsoft</span
+                >
+                <span
+                  ><input
+                    type="checkbox"
+                    name=""
+                    id="checkbox10"
+                    onclick="updateCount()"
+                  />Invision</span
+                >
+              </div>
+<div class="list1">
+  <span><input type="text" id="newCheckboxName" placeholder="Enter brand"></span>
+  <button onclick="addCheckbox()"><img src="svg/add.svg" alt=""></button>
+</div>
+            
+             
+              
+            </div>
+            <div class="description">
+              <h3>Description</h3>
+            </div>
+            <div class="members">
+              <h3>Members</h3>
+            </div>
+            <div class="categories">
+              <h3>Categories</h3>
+            </div>
+            <div class="tag">
+              <h3>Tags</h3>
+            </div>
+            <div class="next-meeting">
+              <h3>Next Meeting</h3>
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div class="box">
+            <div class="selected">
+             <button>Selected<span id="count">0</span></button>
+
+            </div>
+            <div class="archieve">
+             <button>Archieve</button>
+            </div>
+            <div class="deleted">
+              <button onclick="deleteChecked()">Deleted</button>
+
+            </div>
+            <div class="more">
+              <button>More</button>
+            </div>
+
+          </div>
+        </footer>
+      </div>
+
+
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>
